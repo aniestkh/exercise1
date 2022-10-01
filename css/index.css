@@ -24,14 +24,14 @@ article {
 /* header */
 #header {
   position: absolute;
-    top: -15%;
-    bottom: 0;
-    left: -36%;
-    width: 37%;
-    height: 1600px;
-    z-index: 9;
-    transform: rotate(-15deg);
-    transition: all 1s 0.3s;
+  top: -15%;
+  bottom: 0;
+  left: -36%;
+  width: 37%;
+  height: 1600px;
+  z-index: 9;
+  transform: rotate(-15deg);
+  transition: all 1s 0.3s;
 }
 
 #header .headcov {
@@ -47,12 +47,12 @@ article {
 
 #header #nav {
   position: fixed;
-    top: 12%;
-    left: 14%;
-    right: 0;
-    bottom: 0;
-    transform: rotate(15deg);
-    z-index: 99;
+  top: 12%;
+  left: 14%;
+  right: 0;
+  bottom: 0;
+  transform: rotate(15deg);
+  z-index: 99;
 }
 
 #nav .logo {
@@ -61,7 +61,7 @@ article {
   left: 12%;
   width: 50%;
   height: 150px;
-  background-color: #ddd;
+  border: 2px solid #ddd;
 }
 
 #nav .menu {
@@ -87,37 +87,31 @@ article {
   /* border-bottom: 1px solid #fff; */
 }
 
+/* 헤더 내 메뉴 줄 다르게 적용 */
 .menu div:nth-child(1) {transform: translateX(-10%);}
 .menu div:nth-child(2) {transform: translateX(-2%);}
 .menu div:nth-child(3) {transform: translateX(6%);}
 .menu div:nth-child(4) {transform: translateX(14%);}
 
-.menu div.on li.on {transform: scale(1.5); }
-/* .menu div:nth-child(1).on li.on {transform: scale(1.5); }
-.menu div:nth-child(2).on li.on {transform: scale(1.5); }
-.menu div:nth-child(3).on li.on {transform: scale(1.5); }
-.menu div:nth-child(4).on li.on {transform: scale(1.5); } */
+.menu div.on li.on {
+  transform: scale(1.5);
+}
 
+/* 화면로드시 헤더 딜레이와 각 메뉴 선택시 스케일변화 딜레이 */
 /* .menu div:nth-child(1) li {transition: all 1s 0.3s;}
 .menu div:nth-child(2) li {transition: all 1s 0.5s;}
 .menu div:nth-child(3) li {transition: all 1s 0.7s;}
 .menu div:nth-child(4) li {transition: all 1s 0.9s;} */
 
-.menu div li.on {transform: translateX(-10px); }
-/* .menu div:nth-child(1) li.on {transform: translateX(-10px); }
-.menu div:nth-child(2) li.on {transform: translateX(-10px); }
-.menu div:nth-child(3) li.on {transform: translateX(-10px); }
-.menu div:nth-child(4) li.on {transform: translateX(-10px); } */
+.menu div li.on {
+  transform: translateX(-10px);
+}
 
 /* section */
 #section {
-  /* display: flex; */
-}
-
-#section {
   width: 100%;
   height: 100vh;
-  background: url(../images/spacebg.jpg) no-repeat;
+  background: url(/images/spacebg.jpg) no-repeat;
   background-size: 100% 100%;
   position: relative;
 }
@@ -132,6 +126,48 @@ article {
   opacity: 0.3;
   z-index: 1;
 }
+/* 
+.arrow {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  font-size: 80px;
+  color: #fff;
+}
+
+.arrow i:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  animation: arrow 1s 0.1s infinite;
+}
+
+.arrow i:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 68%;
+  width: 100%;
+  animation: arrow 1s 0.2s infinite ;
+}
+
+.arrow i:nth-child(3) {
+  position: absolute;
+  top: 0;
+  right: 135%;
+  width: 100%;
+  animation: arrow 1s 0.3s infinite;
+}
+
+@keyframes arrow {
+  0%{}
+  100%{
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+} */
 
 /* article */
 #article {
@@ -159,27 +195,23 @@ article {
 
 #article .list {
   position: absolute;
-    top: 16%;
-    left: 2;
-    bottom: 0;
-    /* background-color: red; */
-    width: 100%;
-    height: 75%;
-    padding: 5%;
+  top: 16%;
+  left: 2;
+  bottom: 0;
+  width: 100%;
+  height: 75%;
+  padding: 5%;
 }
 
 .tit {
   padding: 10px 0;
-    width: 50%;
-    /* height: 10%; */
-    /* text-align: center; */
-    /* background-color: red; */
-    position: absolute;
-    top: 5%;
-    left: 110%;
-    transform: translateX(-50%);
-    font-size: 70px;
-    color: #fff;
+  width: 50%;
+  position: absolute;
+  top: 5%;
+  left: 110%;
+  transform: translateX(-50%);
+  font-size: 70px;
+  color: #fff;
   transition: all 0.5s 0.3s;
 }
 
